@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-# (c) Shrimadhav U K
+# (c) 
 
 # the logging things
 import logging
@@ -32,9 +32,25 @@ async def get_markup(message: Message):
         "leech 🤔🤔",
         callback_data=("leech").encode("UTF-8")
     ))
+    inline_keyboard = []
+    ikeyboard = []
+    ikeyboard.append(InlineKeyboardButton(
+        "gleech 🤔🤔",
+        callback_data=("gleech").encode("UTF-8")
+    ))
+    inline_keyboard = []
+    ikeyboard = []
+    ikeyboard.append(InlineKeyboardButton(
+        "tleech 🤔🤔",
+        callback_data=("tleech").encode("UTF-8")
+    ))
     ikeyboard.append(InlineKeyboardButton(
         "youtube-dl",
         callback_data=("ytdl").encode("UTF-8")
+    ))
+    ikeyboard.append(InlineKeyboardButton(
+        "youtube-dl Drive",
+        callback_data=("ytdl gleech").encode("UTF-8")
     ))
     inline_keyboard.append(ikeyboard)
     ikeyboard = []
